@@ -1,6 +1,6 @@
 ########### 6 - final_DMCs
 
-########### FILTERING FOR TOP 20 CpGs 
+########### FILTERING FOR TOP 20 DMCs 
 
 # load saved data
 targets <- readRDS("intermediate/targets_qc.rds")
@@ -35,6 +35,6 @@ top20_DMCs <- head(DMCsfilt_ordered, 20)
 cat("Top 20 DMCs ranked by absolute delta beta (FDR < 0.05):\n")
 print(top20_DMCs[, c("delta_beta_vals", "adj.P.Val")])
 
-# save filtered beta values for top 20 CpGs
+# save filtered beta values for top 20 DMCs
 finalbVals_top20 <- bVals[rownames(top20_DMCs), ]
 saveRDS(finalbVals_top20, "../results/top20_bVals.rds")
