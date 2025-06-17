@@ -25,7 +25,7 @@ def train_test_val(X, Y, groups, classifier, param_grid, roc_curve_classifier,
     - groups: group labels (for paired splitting)
     - classifier: machine learning classifier 
     - param_grid: dict or list of dicts for classifier hyperparameter tuning using GridSearchCV
-    - roc_curve_title: name of classifier (e.g. Random Forest)
+    - roc_curve_classifier: name of classifier (e.g. Random Forest)
     - model_path: full path to save the final model (.pkl)
     - roc_path: full path to save the ROC curve (.pdf)
     - r_state: random seed
