@@ -1,4 +1,4 @@
-### INTERNAL VALIDATION FUNCTIONS 
+# INTERNAL VALIDATION FUNCTIONS 
 
 
 # import necessary libraries
