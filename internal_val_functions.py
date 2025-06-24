@@ -1,6 +1,5 @@
 ### INTERNAL VALIDATION FUNCTIONS 
 
-
 # import necessary libraries
 import joblib
 import matplotlib.pyplot as plt
