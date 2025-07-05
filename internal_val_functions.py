@@ -5,7 +5,6 @@ import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from sklearn.svm import SVC
 from sklearn.model_selection import GridSearchCV, GroupShuffleSplit, GroupKFold, LeaveOneGroupOut 
 from sklearn.utils import resample
 from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix, roc_curve
