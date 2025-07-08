@@ -1,4 +1,4 @@
-######### 1- LOAD DATA 
+########### 1- LOAD DATA 
 
 # set up the path to directory with raw methylation files (IDAT) - unzip files if they are zipped
 dataDirectory <- "../input/GSE131013_RAW"
