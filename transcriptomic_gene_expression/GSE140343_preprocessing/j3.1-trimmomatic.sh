@@ -35,7 +35,7 @@ sample=$(sed -n "${SGE_TASK_ID}p" sample2_ids.txt)
 fq1="$fastqdir/${sample}_pass_1.fastq.gz"
 fq2="$fastqdir/${sample}_pass_2.fastq.gz"
 
-# adaptor and qualitry trimming and removal of short end reads using trimmomatic in paired-end mode
+# adaptor and quality trimming and removal of short end reads using trimmomatic in paired-end mode
 trimmomatic PE \
  -threads ${NSLOTS} \
  "$fq1" "$fq2" \
