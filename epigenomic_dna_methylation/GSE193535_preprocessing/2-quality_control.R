@@ -1,4 +1,4 @@
-######## 2 - QUALITY CONTROL 
+########### 2 - QUALITY CONTROL 
 
 # load necessary libraries
 library(minfi)
