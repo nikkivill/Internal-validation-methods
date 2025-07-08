@@ -1,4 +1,4 @@
-######## 4 - FILTERING
+########### 4 - FILTERING
 
 # load necessary libraries
 library(minfi)
