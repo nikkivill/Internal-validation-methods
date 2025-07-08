@@ -21,7 +21,7 @@ head(counts)
 metadata <- read.csv(metadata_path, row.names = 1) 
 head(metadata)
 
-# set sample typ as a factr and make normal the reference
+# set sample type as a factor and make normal the reference
 metadata$Sample_Type <- factor(metadata$Sample_Type, levels = c("Normal", "Tumor")) 
 levels(metadata$Sample_Type)
 
