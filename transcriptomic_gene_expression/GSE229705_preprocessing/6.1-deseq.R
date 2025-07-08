@@ -26,7 +26,7 @@ metadata$Sample_Type <- factor(metadata$Sample_Type, levels = c("Normal", "Tumor
 levels(metadata$Sample_Type)
 
 # check sample order is the name in metadata and counts 
-all(rownames(metadata) == colnames(counts))  # Should be TRUE
+all(rownames(metadata) == colnames(counts))  
 
 # rename column names in counts to include sample type
 colnames(counts) <- paste(metadata$Sample_Type, rownames(metadata), sep = ".")
