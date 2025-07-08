@@ -26,9 +26,6 @@ mkdir -p "$aligndir"
 # get the sample ID based on the task ID
 sample=$(sed -n "${SGE_TASK_ID}p" sample2_ids.txt)
 
-# add echo to see progress
-echo "Aligning $sample..."
-
 # genome alignment, unzipping each file and outputting a BAM file per sample
 STAR \
  --runMode alignReads \
