@@ -1,4 +1,4 @@
-########### 1 - DIFFERENTIAL EXPRESSION ANALYSIS PT1 (DESEQ)
+########### 6.1 - DIFFERENTIAL EXPRESSION ANALYSIS PT1 (DESEQ)
 
 # import necessary libraries
 library(DESeq2)
