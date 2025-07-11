@@ -8,6 +8,6 @@
 
 module load R
 
-Rscript 7.1-deseq.R
+Rscript 6.1-deseq.R
 exit
 
