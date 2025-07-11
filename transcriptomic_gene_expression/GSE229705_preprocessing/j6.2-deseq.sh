@@ -8,5 +8,5 @@
 
 module load R
 
-Rscript 7.2-deseq.R
+Rscript 6.2-deseq.R
 exit
