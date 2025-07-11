@@ -1,4 +1,4 @@
-########### 6 - final_DMCs
+########### 6 - FINAL DMCs
 
 ########### FILTERING FOR TOP 20 CpGs 
 
