@@ -24,6 +24,7 @@ mkdir -p "$outdir" "$tempdir"
 
 cd "$bamdir"
 
+# get read counts using featureCounts
 featureCounts \
  -T ${NSLOTS} \
  -p --countReadPairs \
