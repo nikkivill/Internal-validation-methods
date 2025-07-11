@@ -23,7 +23,7 @@ DMCs$delta_beta_vals <- delta_beta[rownames(DMCs)]
 
 # filter DMCs - only FDR < 0.05 
 DMCsfilt <- DMCs[DMCs$adj.P.Val < 0.05, ]
-cat("▶Rows in DMCsfilt (FDR < 0.05): ", nrow(DMCsfilt), "\n")
+cat("Rows in DMCsfilt (FDR < 0.05): ", nrow(DMCsfilt), "\n")
 
 # rank by absolute delta beta (descending)
 DMCsfilt_ordered <- DMCsfilt[order(-abs(DMCsfilt$delta_beta_vals)), ]
