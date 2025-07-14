@@ -8,7 +8,7 @@
 #$ -j y
 #$ -o j3.1-trimmomatic_logs/$TASK_ID.log
 #$ -m beas
-#$ -t 1-246
+#$ -t 1-100
 #$ -tc 50
 
 module load trimmomatic 
