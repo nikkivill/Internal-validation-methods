@@ -617,7 +617,7 @@ def logocv_val(X, Y, groups, classifier, param_grid,
               model_path, threshold_path, r_state=0):
     
     """
-    Applies nested leave-one-group-out cross validation (LOGO-CV) for a classifier.
+    Applies nested leave-one-group-out cross validation (LOGOCV) for a classifier.
 
     Parameters:
     - X (pd.DataFrame): Feature matrix (samples x features)
