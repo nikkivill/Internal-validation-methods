@@ -26,7 +26,7 @@ def external_val(model, threshold,
     - Y_test (pd.Series): External test labels
     - clf_method (str): Name of classifier and internal validation method used
     - fit (bool, optional): If True, fit the model on full training data
-    - scaler (sklearn.base.TransformerMixin, optional): Scaler used to transform external test features when 'refit=False'
+    - scaler (sklearn.base.TransformerMixin, optional): Scaler used to transform external test features when 'fit=False'
 
     Returns:
     - metrics: Dictionary of performance metrics on the test set, including:
