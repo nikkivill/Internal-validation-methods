@@ -40,7 +40,7 @@ def external_val(model, threshold,
 
     # ensure scaler is provided if fit is not true
     if not fit and scaler is None:
-        raise ValueError("Scaler must be provided if fit is False.")
+        raise ValueError("Scaler must be provided if fit is False")
 
    # if fit is true
     if fit:
