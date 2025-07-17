@@ -7,7 +7,8 @@ import numpy as np
 from numpy import argmax
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix, roc_curve
+from sklearn.metrics import (roc_auc_score, accuracy_score, precision_score, recall_score,
+                             f1_score, confusion_matrix, roc_curve)
 
 # import function
 from external_val_functions import external_val, plot_roc_curves
