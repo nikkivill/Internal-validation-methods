@@ -10,7 +10,8 @@ from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler 
 from sklearn.model_selection import GridSearchCV, GroupShuffleSplit, GroupKFold, LeaveOneGroupOut 
 from sklearn.utils import resample
-from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix, roc_curve
+from sklearn.metrics import (roc_auc_score, accuracy_score, precision_score, recall_score,
+                             f1_score, confusion_matrix, roc_curve)
 
 # load objects
 X = joblib.load("input/X.pkl")
