@@ -15,7 +15,7 @@ def external_val(model, threshold,
                  clf_method, fit=False, scaler=None):
     
     """
-    Applies external validation for a model, giving the option to refit on all of the data used for development. 
+    Applies external validation for a model, giving the option to fit on all of the data used for development. 
 
     Parameters:
     - model (sklearn estimator): Optimised machine learning classifier obtained from internal validation 
