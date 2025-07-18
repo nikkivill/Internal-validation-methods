@@ -42,7 +42,7 @@ def external_val(model, threshold,
         model.fit(X_train, Y_train)
 
     else:
-        # scale external test data using the scaler input
+        # use provided fitted model
         print("Using provided pre-fitted model")
     
     # evaluate on test set using best model and threshold
