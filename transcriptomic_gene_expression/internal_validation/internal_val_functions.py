@@ -363,16 +363,26 @@ def bootstrap_val(X, Y, groups, classifier, param_grid, model_path,
        for key, lst in append_632_plus.items():
           train_val = metrics_train[key]
           oob_val = metrics_oob[key]
-          
-          if (1 - train_val) == 0:
+
+          # error rates
+          error_train = 1 - train_val
+          error_oob = 1 - oob_val
+
+          # avoid zero divsion
+          if train_val == 0:
              R = 0
           else:
-             R = (1 - oob_val) / (1 - train_val)
-             
+             R = (error_oob - error_train) / train_val
+
+          # R must be between 0 and 1
+          R = np.clip(R, 0, 1)
+          # weight for .632+
           w = 0.632 / (1 - 0.368 * R)
-          w = np.clip(w, 0, 1)
-          
-          metrics_632_plus = (1 - w) * train_val + w * oob_val
+
+          # calculate .632+
+          error_632_plus = (1 - w) * error_train + w * error_oob
+          metrics_632_plus = 1 - error_632_plus
+
           lst.append(metrics_632_plus)
           
     # function to format mean ± std + 95% CI
