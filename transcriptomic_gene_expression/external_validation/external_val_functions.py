@@ -125,12 +125,14 @@ def plot_roc_curves(roc_data, plot_title, save_path):
     plt.plot([0,1], [0,1], 'r--', label=f'Random classifier')
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
-    plt.xlabel('False Positive Rate - FPR')
-    plt.ylabel('True Positive Rate - TPR')
-    plt.title(plot_title)
-    plt.legend(loc='lower right', fontsize=10)
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
+    plt.xlabel('False Positive Rate - FPR', fontsize=16)
+    plt.ylabel('True Positive Rate - TPR', fontsize=16)
+    plt.title(plot_title, fontsize=14)
+    plt.legend(loc='lower right', fontsize=14)
     plt.grid(True)
 
-    # save roc curve 
+    # save roc curve
     plt.savefig(save_path, bbox_inches='tight', dpi=300)
-    plt.close() 
+    plt.close()
