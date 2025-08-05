@@ -109,15 +109,17 @@ def train_test_val(X, Y, groups, classifier, param_grid, roc_curve_classifier,
     plt.plot([0,1], [0,1], 'r--', label=f'Random classifier')
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
-    plt.xlabel('False Positive Rate - FPR')
-    plt.ylabel('True Positive Rate - TPR')
-    plt.title(f'Internal validation - {roc_curve_classifier} - Train-test split')
-    plt.legend(loc='lower right')
+    plt.xticks(fontsize=16)
+    plt.yticks(fontsize=16)
+    plt.xlabel('False Positive Rate - FPR', fontsize=16)
+    plt.ylabel('True Positive Rate - TPR', fontsize=16)
+    plt.title(f'Internal validation - {roc_curve_classifier} - Train-test split', fontsize=16)
+    plt.legend(loc='lower right', fontsize=14)
     plt.grid(True)
 
     # save roc curve as PDF
-    plt.savefig(roc_curve_path, bbox_inches='tight')
-    plt.close()   
+    plt.savefig(roc_curve_path, bbox_inches='tight', dpi=300)
+    plt.close() 
     
     # save train-test split model 
     joblib.dump(tts_model, model_path)
