@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -l h_rt=240:00:00
 #$ -pe smp 1
-#$ -l h_vmem=15G
+#$ -l h_vmem=10G
 #$ -cwd
 #$ -j y
 #$ -m beas
