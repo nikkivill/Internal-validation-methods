@@ -98,5 +98,3 @@ ggplot(ALL,
         legend.text = element_text(size = 16),
         axis.text = element_text(size = 16),       
         axis.title = element_text(size = 16))      
-          
- 
