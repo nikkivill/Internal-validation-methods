@@ -60,7 +60,7 @@ kfold_val(X = X,
           k = 5,
           r_state = 0)
 
-### Run LOOCV for SVM 
+### Run LOGOCV for SVM 
 logocv_val(X = X,
           Y = Y,
           groups = groups,
