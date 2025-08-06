@@ -63,7 +63,7 @@ kfold_val(X = X,
           k = 5,
           r_state = 0)
 
-### Run LOOCV for RF
+### Run LOGOCV for RF
 logocv_val(X = X,
           Y = Y,
           groups = groups,
