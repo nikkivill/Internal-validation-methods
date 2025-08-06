@@ -21,6 +21,8 @@ groups = joblib.load("input/groups.pkl")
 from internal_val_functions import train_test_val, bootstrap_val, kfold_val, logocv_val
 
 
+### Multilayer Percepton (MLP) classifier
+
 ### Run train-test split for MLP
 train_test_val(X = X,
                Y = Y,
