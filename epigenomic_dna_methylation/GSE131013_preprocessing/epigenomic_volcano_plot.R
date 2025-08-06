@@ -1,5 +1,3 @@
-# R script to identify top 20 DMCs by delta beta and FDR, and visualize them using a volcano plot
-
 # identify top 20 DMCs 
 
 # load saved data
