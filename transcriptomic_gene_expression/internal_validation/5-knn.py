@@ -22,6 +22,8 @@ groups = joblib.load("input/groups.pkl")
 from internal_val_functions import train_test_val, bootstrap_val, kfold_val, logocv_val
 
 
+### K-Nearest Neighbour (KNN) classifier
+
 ### Run train-test split for KNN
 train_test_val(X = X,
                Y = Y,
