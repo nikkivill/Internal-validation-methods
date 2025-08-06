@@ -59,7 +59,7 @@ kfold_val(X = X,
           k = 5,
           r_state = 0)
 
-### Run LOOCV for MLP
+### Run LOGOCV for MLP
 logocv_val(X = X,
           Y = Y,
           groups = groups,
