@@ -36,7 +36,7 @@ print(top20_DMCs[, c("delta_beta_vals", "adj.P.Val")])
 # save filtered beta values for top 20 CpGs
 finalbVals_top20 <- bVals[rownames(top20_DMCs), ]
 
-########### VISUALISE USING VOLCANO PLOT
+# visualise top 20 DMCs using a volcano plot
   
 # load necessary libraries
 library(ggplot2)
