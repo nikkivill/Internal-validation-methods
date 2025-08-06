@@ -1,6 +1,6 @@
 # R script to identify top 20 DMCs by delta beta and FDR, and visualize them using a volcano plot
 
-########### FILTERING FOR TOP 20 CpGs 
+# identify top 20 DMCs 
 
 # load saved data
 targets <- readRDS("targets_qc.rds")
