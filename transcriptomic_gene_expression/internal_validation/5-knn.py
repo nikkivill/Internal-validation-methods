@@ -56,7 +56,7 @@ kfold_val(X = X,
           k = 5,
           r_state = 0)
 
-### Run LOOCV for KNN
+### Run LOGOCV for KNN
 logocv_val(X = X,
           Y = Y,
           groups = groups,
