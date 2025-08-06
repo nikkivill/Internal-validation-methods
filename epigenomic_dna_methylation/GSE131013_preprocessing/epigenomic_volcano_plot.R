@@ -1,3 +1,7 @@
+# load necessary libraries
+library(ggplot2)
+library(ggrepel)
+
 # identify top 20 DMCs 
 
 # load saved data
@@ -37,10 +41,6 @@ print(top20_DMCs[, c("delta_beta_vals", "adj.P.Val")])
 finalbVals_top20 <- bVals[rownames(top20_DMCs), ]
 
 # visualise top 20 DMCs using a volcano plot
-  
-# load necessary libraries
-library(ggplot2)
-library(ggrepel)
 
 ALL$delta_beta_vals <- delta_beta[rownames(ALL)]
 ALL$neg_log10_FDR <- -log10(ALL$adj.P.Val)
