@@ -1,4 +1,3 @@
-
 ### K-Nearest Neighbour (KNN)
 
 # import necessary libraries
