@@ -1,8 +1,8 @@
-
-########### VISUALISE TOP 20 DEGs USING VOLCANO PLOT
-
+# load necessary libraries
 library(ggplot2)
 library(ggrepel)
+
+# visualise top 20 DEGs using a volcano plot
 
 # load data 
 lfc_shrunk <- read.csv("DEG_results_shrunken_log2FC.csv", row.names = 1)
@@ -80,13 +80,3 @@ ggplot(df,
         legend.text = element_text(size = 16),
         axis.text = element_text(size = 16),       
         axis.title = element_text(size = 16)) 
-
-
-
-
-
-
-
-
-
-
