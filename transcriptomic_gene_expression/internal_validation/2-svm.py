@@ -22,7 +22,7 @@ groups = joblib.load("input/groups.pkl")
 from internal_val_functions import train_test_val, bootstrap_val, kfold_val, logocv_val
 
 
-### Support vector machine (SVM) classifier 
+### Support Vector Machine (SVM) classifier 
 
 ### Run train-test split for SVM 
 train_test_val(X = X,
